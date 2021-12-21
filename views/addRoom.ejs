@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<%= Message %> 
+
+	<form action="/appart/roomAdded" method="POST">
+		<label>Pièce : </label><input type="text" name="nom" class="inpt"/> <br> 
+		<label>Largeur : </label><input type="number" name="largeur" id="larg" class="inpt"/> <br>
+		<label>Longueur : </label><input type="number" name="longueur" id="long" class="inpt"/> <br> 
+		<input type="submit" value="Enregistrer" class="btn">
+
+	</form>
+	<br>
+	<br>
+	<form action="/appart">
+		<button class="btn">Retourner à la liste</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<button id="buttonsurf" class="btn">Calculer la surface</button> <p id="surf"></p>
+	<script src="/css/script.js"></script>
+
+
+
+
+
+</body>
+</html>
